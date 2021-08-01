@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300&display=swap');
+
+body{
+    font-family: 'Assistant';
+    background: whitesmoke;
+    margin: 10px 0px 0px 0px;
+}
+.cabecalho{
+    display:flex;
+    height: 100px;
+    justify-content: space-between;
+    margin:0px 15px;
+}
+
+.logo{
+    display: flex;
+    background: whitesmoke;
+    align-items: center;
+
+}
+.logo img{
+    width: 100px;
+}
+
+.logo h1{
+    font-size: 60px;
+    margin:0px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.option{
+    display: flex;
+    width: 65%;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #71c7ac;
+    box-shadow: 0px 0px 10px 0px rgb(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+.menu{
+    display:flex;
+    padding: 35px;
+    cursor: pointer;
+}
+
+.menu:hover{
+    color:whitesmoke;
+    transform: scale(1.2);
+}
+.texto{
+    margin:20px;
+}
+.imagem{
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: column;
+    margin: 20px;
+
+}
+#topo {
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.bloco{
+ display: flex;
+ justify-content: center
+}
+.bloco img{
+    width: 25%;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#topo:hover{
+    border-radius: 100px;
+    transform:scale(1.02)
+}
+ .bloco img:hover{
+     border-radius: 100px;
+     transform:scale(1.02)
+ }
+.rodape{
+    background: #71c7ac;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+@media (max-width: 600px) {
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    .cabecalho{
+        display: flex;
+        flex-direction: column;
+    }
+    .logo h1{
+        font-size: 40px;;
+    }
+    .option{
+        display: flex;
+        flex-direction: column;
+        background: #71c7ac;
+        width: 100%;
+        padding: 0px;
+        box-shadow: 0px 0px 10px 0px rgb(0, 0, 0, 0.5);
+    }
+    .menu{
+        padding: 15px;
+        margin: 0px;
+    }
+
+    #topo{
+        width: 100%;
+    }
+    .bloco{
+        flex-direction: column;
+    }
+    .bloco img{
+        width: 100%;
+        border-radius: 10px;
+    }
+    .texto{
+        margin:200px 20px 0px 20px
+
+    }
+}
+
